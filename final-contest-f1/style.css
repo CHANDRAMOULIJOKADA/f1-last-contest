@@ -1,0 +1,355 @@
+.bg-body-tertiary {
+    --bs-bg-opacity: 0!important;
+}
+.navbar{
+    width: 100%;
+}
+button{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(25, 92, 227);
+    color: white;
+    font-weight: 400;
+    border: none;
+    font-size: 16px!important;
+    border-radius: 15px!important;
+}
+
+/* .carousel-control-next-icon{
+    filter: invert(0) grayscale(0)!important;
+} */
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    position: relative;
+    top:300px;
+    filter: invert(0) grayscale(0)!important;
+}
+.carousel-caption h5{
+    color: white;
+    font-size: 35px;
+}
+.carousel-caption p{
+    color: white;
+    font-size: 23px;
+}
+.flex{
+    display: flex;
+    width: 100%;
+    column-gap: 30px;
+    margin-top: 60px;
+    position: relative;
+    left: 130px;
+}
+.flex img{
+    width: 420px;
+}
+.flex div p{
+    position: relative;
+    left: 140px;
+    top: 10px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* grid */
+.grid{
+    margin-top: 50px;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    grid-template-areas: 
+        "grid-one grid-one grid-two grid-three grid-four grid-four"
+        "grid-one grid-one grid-five grid-six grid-seven grid-seven"
+        "grid-eight grid-eight grid-nine grid-nine grid-nine grid-nine"
+        "grid-eight grid-eight grid-nine grid-nine grid-nine grid-nine";
+}
+.grid-one{
+    grid-area: grid-one;
+}
+.grid-two{
+    grid-area: grid-two;
+}
+.grid-three{
+    grid-area: grid-three;
+}
+.grid-four{
+    grid-area: grid-four;
+}
+.grid-five{
+    grid-area: grid-five;
+}
+.grid-six{
+    grid-area: grid-six;
+}
+.grid-seven{
+    grid-area: grid-seven;
+}
+.grid-eight{
+    grid-area: grid-eight;
+}
+.grid-nine{
+    grid-area: grid-nine;
+}
+.items{
+    width: 100%;
+}
+.items{
+    background: url(https://images.unsplash.com/photo-1685377135844-6b9944b85abe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60);
+}
+.card{
+    box-shadow: 3px 3px 1px lightblue;
+}
+.cards{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+}
+.button a button{
+    position: relative;
+    left: 30px;
+    margin-bottom: 20px;
+}
+.button a button:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+.copyrights{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 22px;
+}
+.footer-div1{
+    font-size: 22px;
+}
+.footer-div2{
+    position: relative;
+    left: 100px;
+    font-size: 22px;
+}
+.footer-div3{
+    position: relative;
+    left: 350px;
+    font-size: 22px;
+}
+@media only screen and (max-width:576px) {
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        position: relative;
+        top:120px;
+        filter: invert(0) grayscale(0)!important;
+    }
+    .navbar>.container-fluid{
+        flex-direction: row-reverse;
+    }
+    .flex {
+        column-gap: 10px;
+        margin-top: 18px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        left: 0;
+    }
+    .one{
+        width: 100%;
+    }
+    .one img{
+        width: 100%;
+    }
+    .two{
+        width: 100%;
+    }
+    .two img{
+        width: 100%;
+    }
+    .three{
+        width: 100%;
+    }
+    .three img{
+        width: 100%;
+    }
+    .cards{
+        width: 100%;
+    }
+    .footer-div1{
+        font-size: 18px;
+        position: relative;
+        left: 0px;
+    }
+    .footer-div2{
+        left: 10px;
+        font-size: 18px;
+    }
+    .footer-div3{
+        position: relative;
+        left: 10px;
+        font-size: 18px;
+    }
+    .copyrights{
+        font-size: 14px;
+    }
+    .copyrights button{
+        width: 100px;
+        height: 30px;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:768px) {
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        position: relative;
+        top:200px;
+        filter: invert(0) grayscale(0)!important;
+    }
+    .navbar>.container-fluid{
+        flex-direction: row-reverse;
+    }
+    .flex {
+        column-gap: 10px;
+        margin-top: 18px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        left: 130px;
+    }
+    .cards{
+        width: 100%;
+    }
+    .footer-div1{
+        font-size: 18px;
+        position: relative;
+        left: 0px;
+    }
+    .footer-div2{
+        left: 10px;
+        font-size: 18px;
+    }
+    .footer-div3{
+        position: relative;
+        left: 10px;
+        font-size: 18px;
+    }
+    .copyrights{
+        font-size: 18px;
+    }
+    .copyrights button{
+        width: 120px;
+        height: 40px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .navbar>.container-fluid{
+        flex-direction: row-reverse;
+    }
+    .flex {
+        column-gap: 10px;
+        margin-top: 18px;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        left:0;
+    }
+    .one{
+        width: 30%;
+        margin-right: 30px;
+    }
+    .two{
+        width: 30%;
+        position: relative;
+        left: 150px;
+    }
+    .three{
+        position: relative;
+        left: 200px;
+    }
+    .cards{
+        width: 100%;
+    }
+    .footer-div1{
+        font-size: 18px;
+        position: relative;
+        left: 0px;
+    }
+    .footer-div2{
+        left: 10px;
+        font-size: 18px;
+    }
+    .footer-div3{
+        position: relative;
+        left: 10px;
+        font-size: 18px;
+    }
+    .copyrights{
+        font-size: 14px;
+    }
+    .copyrights button{
+        width: 100px;
+        height: 30px;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        position: relative;
+        top:300px;
+        filter: invert(0) grayscale(0)!important;
+    }
+    .flex {
+        column-gap: 5px;
+        margin-top: 18px;
+        flex-wrap: nowrap;
+        position: relative;
+        left: 20px;
+    }
+    .one{
+        width: 30%;
+    }
+    .one img{
+        width: 100%;
+
+    }
+    .two{
+        width: 30%;
+    }
+    .two img{
+        width: 100%;
+        position: relative;
+        left: 30px;
+    }
+    
+    .three{
+        width: 30%;
+        position: relative;
+        left: 50px;
+    }
+    .three img{
+        width: 100%;
+    }
+    .cards{
+        width: 100%;
+    }
+    .footer-div1{
+        font-size: 18px;
+        position: relative;
+        left: 0px;
+    }
+    .footer-div2{
+        left: 10px;
+        font-size: 18px;
+    }
+    .footer-div3{
+        position: relative;
+        left: 10px;
+        font-size: 18px;
+    }
+    .copyrights{
+        font-size: 14px;
+    }
+    .copyrights button{
+        width: 100px;
+        height: 30px;
+    }
+}
